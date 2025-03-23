@@ -1,0 +1,125 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fdeee4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+h2 {
+    color: #FF5733;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #FF5733;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+    color: black;
+    background: #ffffff;
+}
+
+/* Placeholder Color */
+input::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus {
+    border-color: #C70039;
+    outline: none;
+}
+
+/* Checkbox Section */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin: 10px 0;
+    color: #333;
+    font-size: 14px;
+}
+
+.checkbox-container input {
+    width: 16px;
+    height: 16px;
+    accent-color: #FF5733;
+}
+
+.checkbox-container a {
+    color: #FF5733;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.checkbox-container a:hover {
+    text-decoration: underline;
+}
+
+/* Sign-Up Button */
+button {
+    width: 100%;
+    padding: 10px;
+    background: #FF5733;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    margin: 10px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #C70039;
+    transform: translateY(-2px);
+}
+
+/* Back Button - Uniform Design */
+.back-button {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: none;
+    border: none;
+    color: #FF5733;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.back-button::before {
+    content: "←";
+    font-size: 18px;
+}
+
+.back-button:hover {
+    color: #C70039;
+}
